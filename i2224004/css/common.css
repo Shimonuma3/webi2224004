@@ -1,0 +1,181 @@
+
+* {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+
+.header{
+    width: 100%;
+    height: 100%;
+}
+
+.menu li a:hover{
+    opacity: 0.5;
+}
+
+
+
+
+nav{
+  width: 100%;
+  padding:0px 0;
+  display: flex;
+    align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  background: #000;
+}
+
+.logo{
+    padding-left: 2%;
+}
+
+
+nav ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 20px 30px;
+   }
+
+   nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    }
+
+    nav.sticky{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #000;
+        color: #fff;
+        display: flex;
+        transition: 0.6s;
+    }
+
+    nav.sticky ul{
+        background-color: transparent;
+    }
+
+    .wrapper{
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        min-height: 100vh;
+        padding-bottom: 120px;/*←footerの高さ*/
+        box-sizing: border-box;
+    
+    }
+
+    div {
+        display: block;
+    }
+
+
+.prof_txt {
+        width: 500px;
+        margin: 0 auto;
+        display: inline-block;
+    text-align: left;
+    line-height:  200%;
+    color: #000;
+    text-shadow: 1px 2px 3px #808080;
+}
+
+
+html, body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 50px auto;
+    color: #dcdcdc;
+    min-width: 320px;
+    letter-spacing: -.1px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: YuGothic,'游ゴシック',Verdana,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ ProN',sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background: #fff url(../img/haiiro.JPEG) repeat;
+    line-height:11px;
+    text-align:center;
+}
+
+
+    .fixed_btn a{
+        position: fixed;
+        top: 100px; 
+        right: 20px;
+        padding: 13px 63px;
+        color: #fff;
+        font-size: 20px;
+        background-color: #000;
+        list-style: none;
+       text-decoration: none;
+       border: 1px solid transparent;
+       border-radius: 35px;
+      }
+      
+      .fixed_btn a::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 25px;
+          transform: translateY(-50%);
+          width: 30px;
+          height: 1px;
+          background-color: #333;
+      }
+      
+      .fixed_btn a::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          background-color: transparent;
+          border: 1px solid #333;
+          border-radius: 50%;
+      }
+      
+      .fixed_btn a:hover {
+          background-color: #fff;
+          border: 1px solid #333;
+          color: #000;
+          
+      }
+      
+      .fixed_btn a:hover::before {
+          background-color: #000;
+      }
+      
+      .fixed_btn a:hover::after {
+          border: 1px solid #000;
+      }
+      
+      body {
+        -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+        animation: fadeIn 1.5s ease 0s 1 normal;
+      }
+    
+      @keyframes fadeIn {
+        0% {
+          opacity: 0
+        }
+    
+        100% {
+          opacity: 1
+        }
+      }
+    
+      @-webkit-keyframes fadeIn {
+        0% {
+          opacity: 0
+        }
+    
+        100% {
+          opacity: 1
+        }
+      }
+
+      

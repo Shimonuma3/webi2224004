@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-langage" content="ja">
+
+<link rel="stylesheet"href="../css/page.css">
+<link rel="stylesheet"href="../css/common.css">
+<link rel="stylesheet"href="../css/video.css">
+<title>VIDEO|飯島偲文 official site</title>
+
+<body>
+
+<header id="header">
+    <nav class="navbar">
+     <h1 class="logo">
+        <a href="../index.html">
+            <img src="../img/web_logo3.png"alt="飯島偲文Official Site"width="220">
+        </a>
+     </h1>
+    </div>
+    <div class="head_left clearfix">
+        <h1 class="logo2">
+         <a href="../index.html">
+         </a>
+        </h1>
+        <ul class="menu">
+        <li><a href="../video/video.html">VIDEO</a></li>
+        <li><a href="../art/art.html">ART</a></li>
+        <li><a href="../Web/web.html">Web</a></li> 
+    </ul>
+    </nav>
+</div>
+
+
+
+</header>
+
+
+<main>
+<h2 class="midashi">VIDEO</h2>
+
+
+<div class="content">
+
+  <div class="card-wrap">
+  <div class="card-list">
+    <p class="card-listimage"> <a href="./video_page/okinawa.html"><img src="./video_samune/okinawa_samune.png" alt="okinawa"width=450px></p></a>
+    <h2 class="card-listTitle">めんそーれ</h2>
+    <p class="card-listText">高校二年生の頃、研究旅行で沖縄に行った際の動画です。
+      <br>少しでも自分から表現したいと思い、使用楽曲は自身歌唱した曲にしました。タイトルは沖縄っぽいという理由で友達が決めました。
+    </p>
+  </div>
+
+  <div class="card-list">
+    <p class="card-listimage"> <a href="./video_page/daturyoku.html"><img src="./video_samune/daturyoku_samune.png" alt="daturyoku times"width=450px></p></a>
+    <h2 class="card-listTitle">脱力！和光タイムズ</h2>
+    <p class="card-listText">高校の卒業式で、全校生徒＆保護者の前で流した動画です。<br>編集・出演・撮影を担当しました。</p>
+  </div>
+
+  <div class="card-list">
+    <p class="card-listimage"> <a href="./video_page/loveflower.html"><img src="./video_samune/loveflower_samune.png" alt="love flower"width=450px></p></a>
+    <h2 class="card-listTitle">Love Flower</h2>
+    <p class="card-listText">イラストを動かしたアニメーション動画を作りました。</p>
+  </div>
+
+ 
+  <div class="card-list">
+    <p class="card-listimage"> <a href="./video_page/mirakuru.html"><img src="./video_samune/mirakuru_samune.png" alt="mirakuruman"width=450px></p></a>
+    <h2 class="card-listTitle">帰っていったミラクルマン</h2>
+    <p class="card-listText">アニメ作家谷口崇さんからインスピレーションを受けて、ギャグアニメを作りました。</p>
+  </div>
+
+
+
+  </div>
+</div>
+
+
+</main>
+
+
+
+
+
+<script>
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu");
+    //ヘッダーがulタグの位置に来たら、ヘッダー固定する。
+ window.addEventListener("scroll",() => {
+      if(window.pageYOffset >= menu.offsetTop) {
+        navbar .classList.add("sticky");
+      } else {
+        navbar .classList.remove("sticky");
+      }
+    });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header{
+width: 100%;
+height: 100%;
+}
+
+.menu li a:hover{
+opacity: 0.5;
+}
+
+
+
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  background: #000000;
+}
+
+
+.logo{
+padding-left: 2%;
+}
+
+
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 20px 30px;
+}
+
+
+nav ul li a{
+text-decoration: none;
+color: #fff;
+}
+
+nav.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  display: flex;
+  transition: 0.6s;
+  z-index: 999; /* 最前面に表示するための値を設定 */
+}
+
+
+nav.sticky ul{
+    background-color: transparent;
+}
+
+.wrapper{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;
+
+}
+
+div {
+    display: block;
+}
+
+
+section {
+  margin-bottom: 40px;
+  margin-top: 80px; /* 上部に余白を追加（任意のサイズを指定） */
+  margin-bottom: 100px;
+}
+
+
+
+
+#portforio .content {
+  display: flex; /* 要素を横並びにする */ 
+}
+
+
+#portforio .item {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  color: #000;
+  transition: transform 0.3s ease;
+}
+
+#portforio .item:hover {
+  transform: scale(1.1);
+}
+
+#portforio p {
+  font-size: 20px;
+}
+
+#portforio img {
+  max-width: 100%; /* 画像が親要素に収まるようにする */
+}
+
+#portforio h2 {
+  width: 130px; /* 要素の幅を指定 */
+  margin: 0 auto; /* 左右のマージンを自動計算して中央寄せ */
+  color: #000;
+  font-size: 36px; /* テキストのサイズを36ピクセルに設定 */;
+}
+
+@media screen and (max-width: 767px) {
+  /* ここにスマートフォン用のCSSを追加 */
+  #portforio .content {
+    display: block;
+  }
+
+  #portforio .item {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #portforio h2 {
+    width: 100%; /* 要素の幅を100%に指定 */
+    font-size: 24px; /* テキストのサイズを24ピクセルに設定 */
+    margin-bottom: 10px; /* h2要素の下に余白を追加 */
+  }
+}
+
+
+html, body {
+width: 100%;
+height: auto;
+margin: 0 auto 50px auto;
+color: white;
+min-width: 320px;
+letter-spacing: -.1px;
+font-size: 12px;
+line-height: 1.5;
+font-family: YuGothic,'游ゴシック',Verdana,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ ProN',sans-serif;
+-webkit-text-size-adjust: 100%;
+background: #fff url(../img/haiiro.JPEG) repeat;
+line-height:11px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+.prof_img{
+    padding: 0 80px;
+    text-align: right;
+}
+
+.main-visual__heading {
+    font-family:"ヒラギノ角ゴ ProN W3",Hiragino Kaku Gothic ProN,Arial,"メイリオ",Meiryo,"MS Ｐゴシック","MS PGothic",sans-serif;
+    font-weight: 200;
+    z-index: 10;
+    position: absolute;
+    top:680px ;
+    bottom: 32px;
+    left: 40px;
+    font-size: 140px;
+    line-height: 110px;
+    text-align: left;
+    color: #000;
+    letter-spacing: -0.1em
+}
+
+#profile {
+  position: relative; /* 親要素に対して相対的な位置を設定 */
+}
+
+.prof_img {
+  position: absolute; /* 位置を絶対的に設定 */
+  top: 0; /* 上端に対しての距離（必要な値を設定） */
+  right: 30px; /* 左端からの距離（必要な値を設定） */
+  width: 80%; /* 画像の幅を80%に縮小 */
+}
+
+/* 通常の画面用のスタイル */
+@media screen and (min-width: 768px) {
+  /* 通常の画面用のCSSをここに追加 */
+  .prof_img {
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
+}
+
+/* スマートフォン用のスタイル */
+@media screen and (max-width: 767px) {
+  /* スマートフォン用のCSSをここに追加 */
+  .prof_img {
+    position: static; /* 通常のフローに戻す */
+    width: 80%; /* 画像の幅を80%に縮小 */
+    margin-top: 20px; /* 画像の上に余白を追加 */
+    margin-right: auto; /* 右側の余白を自動調整 */
+    margin-left: auto; /* 左側の余白を自動調整 */
+  }
+}
+
+
+.fixed_btn a{
+  position: fixed;
+  bottom: 30px; 
+  right: 20px;
+  padding: 13px 63px;
+  color: #fff;
+  font-size: 20px;
+  background-color: #000;
+  list-style: none;
+ text-decoration: none;
+ border: 1px solid transparent;
+ border-radius: 35px;
+}
+
+.fixed_btn a::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 1px;
+	background-color: #333;
+}
+
+.fixed_btn a::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	border: 1px solid #333;
+	border-radius: 50%;
+}
+
+.fixed_btn a:hover {
+	background-color: #fff;
+	border: 1px solid #333;
+    color: #000;
+    
+}
+
+.fixed_btn a:hover::before {
+	background-color: #000;
+}
+
+.fixed_btn a:hover::after {
+	border: 1px solid #000;
+}
+
+
+
+.shutter{
+    width: 150;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    background: #0F0F0F;
+    z-index:99;
+    -webkit-animation: byeShutter 2.4s forwards;
+    animation: byeShutter 2.4s forwards;
+  }
+  .logochan {
+    height: 100;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: logo 0.8s forwards;
+    animation: logo 0.5s forwards;
+    animation-delay: 0.2s;
+  }
+  @keyframes byeShutter {
+  70% {
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  }
+  @keyframes logo {
+  0% {
+    opacity: 1;
+  }
+    
+  50% {
+    transform: rotate(0deg);     
+  }
+    100% {
+    transform: scale(0.8);
+    }
+  }
+
+  

@@ -1,0 +1,11 @@
+.prof_img img {
+    border: solid 2px #333;
+}
+
+.prof_txt h3{
+    text-shadow: 
+    0 0 1px #8080ed, 0 0 3px #8080ed, 
+    0 0 6px #8080ed, 0 0 10px #8080ed, 
+    0 0 30px #8080ed, 0 0 50px #8080ed;
+  color: #000;
+}
